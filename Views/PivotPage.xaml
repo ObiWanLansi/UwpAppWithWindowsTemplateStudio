@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="UwpAppWithWindowsTemplateStudio.Views.PivotPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource PageStyle}"
+    xmlns:behaviors="using:UwpAppWithWindowsTemplateStudio.Behaviors"
+    xmlns:i="using:Microsoft.Xaml.Interactivity"
+    xmlns:model="using:UwpAppWithWindowsTemplateStudio.Models"
+    xmlns:views="using:UwpAppWithWindowsTemplateStudio.Views"
+    mc:Ignorable="d">
+
+    <Grid>
+        <Pivot x:Uid="PivotPage">
+            <i:Interaction.Behaviors>
+                <behaviors:PivotBehavior />
+            </i:Interaction.Behaviors>
+            <PivotItem x:Uid="PivotItem_WebView">
+                <Frame>
+                    <views:WebViewPage/>
+                </Frame>
+            </PivotItem>
+            <PivotItem x:Uid="PivotItem_MasterDetail">
+                <Frame>
+                    <views:MasterDetailPage/>
+                </Frame>
+            </PivotItem>
+            <PivotItem x:Uid="PivotItem_Map">
+                <Frame>
+                    <views:MapPage/>
+                </Frame>
+            </PivotItem>
+            <PivotItem x:Uid="PivotItem_InkDraw">
+                <Frame>
+                    <views:InkDrawPage/>
+                </Frame>
+            </PivotItem>
+            <PivotItem x:Uid="PivotItem_InkSmartCanvas">
+                <Frame>
+                    <views:InkSmartCanvasPage/>
+                </Frame>
+            </PivotItem>
+            <PivotItem x:Uid="PivotItem_Settings">
+                <Frame>
+                    <views:SettingsPage/>
+                </Frame>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>
