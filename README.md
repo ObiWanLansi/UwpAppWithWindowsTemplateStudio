@@ -1,5 +1,5 @@
 # UwpAppWithWindowsTemplateStudio
-A Small Example Created UWP Test Created With The Windows Template Studio
+A Small UWP Example Created With The Windows Template Studio
 
 
 # Screenshot
